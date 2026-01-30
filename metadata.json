@@ -1,0 +1,5 @@
+{
+  "name": "ShiftScheduler-DSA",
+  "description": "A React application demonstrating a Greedy Algorithm for hospital staff scheduling. It features dynamic staff management, automatic schedule generation based on workload balancing, and educational complexity analysis.",
+  "requestFramePermissions": []
+}

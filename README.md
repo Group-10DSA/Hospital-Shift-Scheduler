@@ -2,8 +2,8 @@
 
 Project structure
 
-project/
-│
+#project/
+#│
 ├── App.tsx
 ├── index.tsx
 ├── index.html

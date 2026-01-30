@@ -204,8 +204,8 @@ const StaffList: React.FC<StaffListProps> = ({ staffList, onRemoveStaff, onUpdat
           {text.noStaffMessage}
         </div>
       ) : (
-        // Scrollable list container
-        <div className="space-y-3 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar flex-grow">
+        // Scrollable list container with desktop height adjustment
+        <div className="space-y-3 max-h-[400px] lg:max-h-[600px] overflow-y-auto pr-2 custom-scrollbar flex-grow">
           {sortedList.map((staff) => {
             // Check if this specific item is in edit mode
             const isEditing = staff.id === editingId;

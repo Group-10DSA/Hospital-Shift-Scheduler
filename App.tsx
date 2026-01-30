@@ -104,7 +104,7 @@ const App: React.FC = () => {
       </header>
 
       {/* Developer Credit Info Box - Compact Version */}
-      <div className="max-w-5xl mx-auto px-4 mt-4">
+      <div className="max-w-4xl mx-auto px-4 mt-4">
         <div className="bg-gradient-to-r from-slate-800 to-indigo-900 rounded-lg shadow-sm border border-slate-700 py-2 px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
              
              {/* Developer Info */}
@@ -130,11 +130,11 @@ const App: React.FC = () => {
       </div>
 
       {/* Main Content Area */}
-      <main className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <main className="max-w-4xl mx-auto px-4 py-8">
+        <div className="flex flex-col gap-8">
           
-          {/* Left Column: Input Forms & Staff List */}
-          <div className="lg:col-span-1 space-y-6">
+          {/* Section 1: Input Forms & Staff List */}
+          <div className="space-y-6">
             <StaffForm onAddStaff={handleAddStaff} text={text} />
             <StaffList 
               staffList={staffList} 
@@ -152,8 +152,8 @@ const App: React.FC = () => {
             </button>
           </div>
 
-          {/* Right Column: Visualization & Algorithm Output */}
-          <div className="lg:col-span-2 space-y-6">
+          {/* Section 2: Visualization & Algorithm Output */}
+          <div className="space-y-6">
             
             {/* Algorithm Explanation Card */}
             <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 text-blue-900">
@@ -247,7 +247,7 @@ const App: React.FC = () => {
             
             {/* GitHub Link */}
             <a 
-              href="https://github.com" 
+              href="https://github.com/Group-10DSA/Hospital-Shift-Scheduler" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-105"

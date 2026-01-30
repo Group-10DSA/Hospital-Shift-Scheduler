@@ -3,7 +3,9 @@
 Project structure
 
 project/
+
 │
+
 ├── App.tsx
 ├── index.tsx
 ├── index.html

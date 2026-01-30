@@ -76,7 +76,7 @@ const App: React.FC = () => {
 
   // JSX Render Logic
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 pb-32 font-sans">
+    <div className="min-h-screen bg-slate-50 text-slate-900 pb-32 lg:pb-12 font-sans">
       
       {/* Header Section */}
       <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-40">
@@ -144,6 +144,14 @@ const App: React.FC = () => {
               onUpdateStaff={handleUpdateStaff}
               text={text} 
             />
+            {/* Desktop-only Generate Button */}
+            <button
+              onClick={handleGenerateSchedule}
+              className="hidden lg:flex w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg transform transition active:scale-95 items-center justify-center gap-2"
+            >
+              <Calendar size={24} />
+              {text.generateBtn}
+            </button>
           </div>
 
           {/* Right Column: Visualization & Algorithm Output */}
@@ -267,8 +275,8 @@ const App: React.FC = () => {
         </footer>
       </main>
 
-      {/* Floating Bottom Button for triggering generation */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-50">
+      {/* Floating Bottom Button for triggering generation (Mobile Only) */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-50">
         <div className="max-w-7xl mx-auto">
           <button
             onClick={handleGenerateSchedule}

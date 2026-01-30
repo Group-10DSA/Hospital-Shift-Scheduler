@@ -103,31 +103,29 @@ const App: React.FC = () => {
         </div>
       </header>
 
-      {/* Developer Credit Info Box */}
-      <div className="max-w-3xl mx-auto px-4 mt-6">
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-          <div className="grid grid-cols-1 sm:grid-cols-2 border-b sm:border-b-0">
+      {/* Developer Credit Info Box - Compact Version */}
+      <div className="max-w-5xl mx-auto px-4 mt-4">
+        <div className="bg-gradient-to-r from-slate-800 to-indigo-900 rounded-lg shadow-sm border border-slate-700 py-2 px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
              
              {/* Developer Info */}
-             <div className="flex flex-col justify-center items-center text-center p-4 border-b sm:border-b-0 sm:border-r border-gray-100 bg-gray-50/50">
-                <span className="text-xs font-bold text-red-500 uppercase flex items-center gap-1 mb-1">
+             <div className="flex items-center gap-2 text-center sm:text-left">
+                <span className="text-[10px] font-bold text-emerald-400 uppercase flex items-center gap-1 shrink-0">
                    <Code size={12} /> {text.developedByPrefix}
                 </span>
-                <span className="text-sm font-semibold text-gray-800 leading-tight">
+                <span className="text-xs font-medium text-white">
                   {text.groupName}
                 </span>
              </div>
 
              {/* Project Info */}
-             <div className="flex flex-col justify-center items-center text-center p-4">
-                <span className="bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-200 mb-2 uppercase tracking-wide">
+             <div className="flex items-center gap-3">
+                <span className="bg-indigo-500/20 text-indigo-200 text-[10px] font-bold px-1.5 py-0.5 rounded border border-indigo-500/40 uppercase tracking-wide shrink-0">
                    {text.projectTitle}
                 </span>
-                <span className="text-xs text-gray-400 italic leading-tight">
+                <span className="text-[10px] text-slate-400 italic hidden sm:block">
                    {text.disclaimer}
                 </span>
              </div>
-          </div>
         </div>
       </div>
 

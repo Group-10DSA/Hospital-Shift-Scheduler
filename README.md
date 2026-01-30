@@ -2,9 +2,9 @@
 
 Project structure
 
-# project/
-# │
-# ├── App.tsx
+project/
+│
+├── App.tsx
 ├── index.tsx
 ├── index.html
 ├── locales.ts

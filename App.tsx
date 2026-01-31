@@ -103,26 +103,26 @@ const App: React.FC = () => {
         </div>
       </header>
 
-      {/* Developer Credit Info Box - Compact Version */}
-      <div className="max-w-4xl mx-auto px-4 mt-4">
-        <div className="bg-gradient-to-r from-slate-800 to-indigo-900 rounded-lg shadow-sm border border-slate-700 py-2 px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      {/* Developer Credit Info Box - Expanded Red Version */}
+      <div className="max-w-4xl mx-auto px-4 mt-6">
+        <div className="bg-gradient-to-r from-red-900 to-red-700 rounded-xl shadow-lg border border-red-800 py-4 px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
              
              {/* Developer Info */}
-             <div className="flex items-center gap-2 text-center sm:text-left">
-                <span className="text-[10px] font-bold text-emerald-400 uppercase flex items-center gap-1 shrink-0">
-                   <Code size={12} /> {text.developedByPrefix}
+             <div className="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
+                <span className="text-xs font-bold text-red-200 uppercase flex items-center gap-1 shrink-0 bg-red-950/40 px-3 py-1.5 rounded-md shadow-sm border border-red-900/50">
+                   <Code size={14} /> {text.developedByPrefix}
                 </span>
-                <span className="text-xs font-medium text-white">
+                <span className="text-base sm:text-lg font-bold text-yellow-300 tracking-wide drop-shadow-sm">
                   {text.groupName}
                 </span>
              </div>
 
              {/* Project Info */}
              <div className="flex items-center gap-3">
-                <span className="bg-indigo-500/20 text-indigo-200 text-[10px] font-bold px-1.5 py-0.5 rounded border border-indigo-500/40 uppercase tracking-wide shrink-0">
+                <span className="bg-white/10 text-white text-xs font-bold px-3 py-1 rounded border border-white/20 uppercase tracking-wide shrink-0">
                    {text.projectTitle}
                 </span>
-                <span className="text-[10px] text-slate-400 italic hidden sm:block">
+                <span className="text-xs text-red-100 italic hidden sm:block opacity-90">
                    {text.disclaimer}
                 </span>
              </div>

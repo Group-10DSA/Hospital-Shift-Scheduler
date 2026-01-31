@@ -112,9 +112,14 @@ const App: React.FC = () => {
                 <span className="text-xs font-bold text-red-200 uppercase flex items-center gap-1 shrink-0 bg-red-950/40 px-3 py-1.5 rounded-md shadow-sm border border-red-900/50">
                    <Code size={14} /> {text.developedByPrefix}
                 </span>
-                <span className="text-base sm:text-lg font-bold text-yellow-300 tracking-wide drop-shadow-sm">
-                  {text.groupName}
-                </span>
+                <div className="flex flex-col">
+                  <span className="text-base sm:text-lg font-bold text-yellow-300 tracking-wide drop-shadow-sm">
+                    {text.groupName}
+                  </span>
+                  <span className="text-sm font-medium text-red-100 opacity-90">
+                    3rd year Biomedical Engineering Students [2026]
+                  </span>
+                </div>
              </div>
 
              {/* Project Info */}

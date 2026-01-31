@@ -93,7 +93,7 @@ export const translations = {
     alertAddStaff: "እባክዎ ቢያንስ አንድ ሰራተኛ ይጨምሩ።",
     developedByPrefix: "የተዘጋጀው በ:",
     groupName: "ቡድን 10 - ክፍል 1 የባዮሜዲካል ምህንድስና ተማሪዎች",
-    projectTitle: "የመረጃ አወቃቀሮች እና ስልተ ቀመሮች ፕሮጀክት",
+    projectTitle: "DSA ፕሮጀክት",
     disclaimer: "ይህ የድር መተግበሪያ ለትምህርታዊ ዓላማ ብቻ የተዘጋጀ ነው።",
     // Contact Info
     githubIntro: "ምንጭ ኮዱን በ GitHub ይመልከቱ",

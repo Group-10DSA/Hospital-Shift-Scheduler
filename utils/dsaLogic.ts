@@ -1,32 +1,6 @@
 // Import necessary types from the types definition file
 import { Staff, ShiftSlot, ShiftType, ScheduleResult } from '../types';
 
-/**
- * GREEDY ALGORITHM IMPLEMENTATION
- * 
- * Goal: Assign staff to shifts such that the workload is balanced.
- * 
- * Strategy:
- * 1. Iterate through each required shift (ShiftSlot).
- * 2. For each shift, find all staff members who are:
- *    a. Available for that shift type (Morning/Night).
- * 3. SORT these candidates by their current 'workedHours' in Ascending order.
- *    - This is the "Greedy" choice: always pick the person with the LEAST work so far.
- * 4. Assign the top candidate.
- * 5. Update that candidate's 'workedHours' (add 8 hours).
- *    - This impacts the sorting for the *next* shift assignment.
- * 
- * Time Complexity:
- * - Let M be the number of shifts to fill.
- * - Let N be the number of staff members.
- * - For each shift (M iterations):
- *   - We filter staff: O(N)
- *   - We sort staff: O(N log N)
- * - Total Complexity: O(M * N log N)
- * 
- * Space Complexity:
- * - O(M) to store the result schedule.
- */
 
 // Define a constant array representing all shifts for a week (Monday to Sunday)
 export const REQUIRED_SHIFTS: ShiftSlot[] = [
